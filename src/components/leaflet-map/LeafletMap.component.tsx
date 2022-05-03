@@ -1,5 +1,5 @@
 import React, { FC, useRef, useEffect } from "react";
-import { LeafletMapContainer } from "./LeafletMap.styles";
+import { LeafletMapContainer, LeafletMapDiv } from "./LeafletMap.styles";
 
 import { map } from "./leaflet-map-object";
 
@@ -19,7 +19,7 @@ const LeafletMap: FC = () => {
 
   return (
     <LeafletMapContainer>
-      <div ref={mapDiv}></div>
+      <LeafletMapDiv ref={mapDiv}></LeafletMapDiv>
     </LeafletMapContainer>
   );
 };

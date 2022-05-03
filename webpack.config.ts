@@ -42,7 +42,11 @@ const config: Configuration = {
       },
       {
         test: /\.css$/i,
-        use: ["css-loader"],
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.png$/,
+        use: ["file-loader"],
       },
     ],
   },

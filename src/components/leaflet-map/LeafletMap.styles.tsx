@@ -1,12 +1,16 @@
 import styled, { css } from "styled-components";
 
 export const LeafletMapContainer = styled.div`
-  grid-column: col 1 / col 13;
+  grid-column: col 3 / col 11;
 
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
-  /* height: 100%; */
-  height: 400px;
-  width: 400px;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+`;
+
+export const LeafletMapDiv = styled.div`
+  height: 100%;
+  width: 100%;
 `;
